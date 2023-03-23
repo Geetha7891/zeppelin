@@ -36,8 +36,8 @@
   <properties>
     <!--library versions-->
     <interpreter.name>flink</interpreter.name>
-    <flink.version>${flink1.12.version}</flink.version>
-    <flink.hadoop.version>2.6.5</flink.hadoop.version>
+    <flink.version>1.17.0</flink.version>
+    <flink.hadoop.version>3.3.5</flink.hadoop.version>
     <hive.version>2.3.4</hive.version>
     <hiverunner.version>4.0.0</hiverunner.version>
     <grpc.version>1.15.0</grpc.version>
@@ -886,7 +886,7 @@
           </artifactSet>
 
           <transformers>
-            <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+            <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
             <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
               <resource>reference.conf</resource>
             </transformer>
@@ -921,7 +921,7 @@
     <profile>
       <id>flink-112</id>
       <properties>
-        <flink.version>${flink1.12.version}</flink.version>
+        <flink.version>1.17.0</flink.version>
       </properties>
       <dependencies>
         <dependency>
@@ -960,7 +960,7 @@
     <profile>
       <id>flink-113</id>
       <properties>
-        <flink.version>${flink1.13.version}</flink.version>
+        <flink.version>1.17.0</flink.version>
       </properties>
       <dependencies>
         <dependency>
@@ -999,7 +999,7 @@
     <profile>
       <id>flink-114</id>
       <properties>
-        <flink.version>${flink1.14.version}</flink.version>
+        <flink.version>1.17.0</flink.version>
       </properties>
       <dependencies>
         <dependency>
@@ -1020,10 +1020,10 @@
     <profile>
       <id>flink-115</id>
       <properties>
-        <flink.version>${flink1.15.version}</flink.version>
+        <flink.version>1.17.0</flink.version>
         <flink.scala.version>2.12.7</flink.scala.version>
         <flink.scala.binary.version>2.12</flink.scala.binary.version>
-        <flink.library.scala.suffix></flink.library.scala.suffix>
+        <flink.library.scala.suffix/>
       </properties>
       <dependencies>
         <dependency>
